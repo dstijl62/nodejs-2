@@ -1,8 +1,10 @@
 import express from 'express';
 import configViewEngine from './config/Viewengine';
+require('dotenv').config();
 
 const app = express();
-const port = 3001
+const port = process.env.PORT || 3001;
+console.log('>>> check port: ', port);
 
 configViewEngine(app);
 
