@@ -4,11 +4,11 @@ import homeController from "../controller/homeController";
 let router = express.Router();
 
 const initWebRoute = (app) => {
-    // app.METHOD(PATH, HANDLER)
-    //======================
-    router.get ('/',homeController.getHomepage);
 
-//========================
+router.get ('/',homeController.getHomepage);
+
+router.get('/detail/user/:userId',homeController.getDetailPage);
+
 router.get('/about', (req, res) => {
     res.send(`I'm Eric!`)
 });
