@@ -43,3 +43,22 @@ th, td {
 }
 
 tr:hover {background-color: #D6EEEE;}
+
+/* ========================== */
+
+.create-user-container{
+  padding: 15px;
+  text-align: center;
+}
+
+.create-user-container label {
+  display: block;
+}
+
+.btn {
+  padding-top: 10px;
+  
+}
+.btn-submit{
+  cursor: pointer;
+}
