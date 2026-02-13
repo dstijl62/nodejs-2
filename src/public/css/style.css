@@ -62,3 +62,26 @@ tr:hover {background-color: #D6EEEE;}
 .btn-submit{
   cursor: pointer;
 }
+
+/* ================= */
+
+.action-btn{
+  display: flex;
+}
+
+/* =============== code cho file update */
+
+.update-user{
+  padding: 15px;
+  text-align: center;
+}
+
+
+.update-user label {
+  display: block;
+}
+
+.btn-update {
+  margin-top: 15px;
+  cursor: pointer;
+}
