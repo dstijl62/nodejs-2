@@ -85,3 +85,20 @@ tr:hover {background-color: #D6EEEE;}
   margin-top: 15px;
   cursor: pointer;
 }
+
+/* ============= code cho upload file */
+
+.upload-file-container{
+  padding: 15px;
+
+}
+
+
+.upload-file-container label {
+  display: block;
+}
+
+.button-save {
+  margin-top: 15px;
+  cursor: pointer;
+}
