@@ -33,7 +33,7 @@ const imageFilter = function(req, file, cb) {
 
 let upload = multer({ storage: storage, fileFilter: imageFilter});
 
-let upload1 = multer({ storage: storage, fileFilter: imageFilter}).array('multiple_images', 5);
+let uploadMultiplefiles = multer({ storage: storage, fileFilter: imageFilter}).array('multiple_images', 5);
 
 //================
 
@@ -57,7 +57,7 @@ router.get('/upload', homeController.getUploadFilePage);
 router.post('/upload-profile-pic', upload.single('profile_pic'), homeController.handleUploadFile);
 
 router.post('/upload-multiple-images', (req, res, next) => {
-    upload1(req, res, (err) => {
+    uploadMultiplefiles(req, res, (err) => {
         if (err instanceof multer.MulterError && err.code === "LIMIT_UNEXPECTED_FILE") {
             // handle multer file limit error here
             res.send('LIMIT_UNEXPECTED_FILE')
